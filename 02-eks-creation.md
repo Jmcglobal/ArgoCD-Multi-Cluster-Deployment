@@ -79,6 +79,8 @@ metadata:
   namespace: argocd
   resourceVersion: "7038"
   uid: 3b59622d-d2da-4167-89bf-239fb94e08ed
+data:
+    server.insecure: "true"
 ```
 
 - Save the file

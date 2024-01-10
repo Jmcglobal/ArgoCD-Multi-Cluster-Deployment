@@ -2,11 +2,6 @@
 
 ### STAR THE REPO IF YOU FIND IT USEFUL
 
-Video Link:
-https://youtu.be/QhDnXsmSnfk
-
-![Untitled design(4)](https://github.com/iam-veeramalla/argocd-hub-spoke-demo/assets/43399466/3fc8e4f6-408c-4575-9b96-e737fc1d0526)
-
 ### ArgoCD Multi-Cluster Deployment
 
 # EKS Setup
@@ -90,6 +85,8 @@ metadata:
   namespace: argocd
   resourceVersion: "7038"
   uid: 3b59622d-d2da-4167-89bf-239fb94e08ed
+data:
+    server.insecure: "true"
 ```
 
 - Save the file
@@ -134,5 +131,5 @@ argocd cluster add Justice@spoke-cluster-1.us-west-1.eksctl.io --server 54.153.1
 ```
 
 - The cluster has been added successfully, you can confirm it by going to the  argocd web user interface > settings > clusters, and see the clustersdata:
-    server.insecure: "true"
+
 
